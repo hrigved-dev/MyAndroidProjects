@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/yellowbackground">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Play Rock, Paper, Scissors!!"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image1"
+        android:textSize="25sp"/>
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/rockpaperscissors" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter your Name"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Computer is selecting."
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editText"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Selection is..."
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text2"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonrock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:background="@drawable/button1"
+        android:layout_marginHorizontal="60dp"
+        android:textColor="@android:color/white"
+        android:text="Rock"
+        android:textAllCaps="false"
+        android:layout_marginTop="100dp" />
+
+
+    <Button
+        android:id="@+id/buttonpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:background="@drawable/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/white"
+        android:text="Paper"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/buttonscissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:background="@drawable/button3"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="260dp"
+        android:layout_marginTop="100dp"
+        android:text="Scissors"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: User 0 Computer 0"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonpaper"
+        android:textSize="25sp" />
+
+
+
+</RelativeLayout>
