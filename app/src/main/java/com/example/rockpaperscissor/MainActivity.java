@@ -105,13 +105,5 @@ public class MainActivity extends AppCompatActivity {
             UserScore++;
             return "Scissors beat Paper! You win.";
         }else return "Invalid";
-
-
-
-
-
-
-
-
     }
 }
